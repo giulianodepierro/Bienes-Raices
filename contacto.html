@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!--header-->
+    <header class="site-header ">
+        <div class="contenedor contenido-header">
+            <div class="barra">
+                <a href="/">
+                    <img src="/img/logo.svg" alt="Logotipo de bienes raices">
+                </a>
+                <nav class="navegacion">
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="anuncios.html">Anuncios</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contacto.html">Contacto</a>
+                </nav>
+            </div>
+            <!--barra-->
+        </div>
+    </header>
+
+    <!--titulo-->
+    <h1 class="fontweigth300 centrar-texto">Contacto</h1>
+    <!--imagen ppal-->
+    <img src="/img/destacada3.jpg" alt="Imagen principal">
+
+    <!--Formulario-->
+
+    <main class="contenedor seccion contenido-centrado">
+        <h1 class="fontweigth300 centrar-texto">Llena el formulario de contacto</h1>
+
+        <form class="contacto" action="">
+
+            <!--Grupo informacion personal-->
+
+            <fieldset>
+                <legend>Informacion Personal</legend>
+                <!--Nombre-->
+                <label for="Nombre">Nombre:</label>
+                <input type="text" id="Nombre" placeholder="Nombre">
+
+                <!--Email-->
+                <label for="email">E-Mail:</label>
+                <input type="email" id="email" placeholder="Mail" required>
+
+                <!--Telefono-->
+                <label for="telefono">Telefono:</label>
+                <input type="tel" id="telefono" placeholder="Telefono" required>
+
+                <!--Mensaje-->
+                <label for="mensaje">Escribe un mensaje:</label>
+                <textarea id="mensaje"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Informacion sobre la propiedad</legend>
+                <label for="opciones"> Compra o Venta:</label>
+                <select id="opciones">
+                    <option value="" disabled selected>--Seleccione--</option>
+                    <option value="">Compra</option>
+                    <option value="">Venta</option>
+                </select>
+
+                <label for="cantidad">Cantidad:</label>
+                <input type="number" min="0" max="10">
+
+                <p>Como desea ser Contactado:</p>
+                <div class="forma-contacto">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="radio" name="contacto" value="telefono" id="telefono">
+
+                    <label for="correo">E-mail:</label>
+                    <input type="radio" name="contacto" value="correo" id="correo">
+                </div>
+                <p>Si Elige Telefono , elija fecha y la hora </p>
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha">
+
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora">
+
+            </fieldset>
+
+            <input type="submit" class="boton btn-verde ">
+        </form>
+
+    </main>
+
+    <footer class="seccion site-footer">
+        <div class="contenedor contenedor-footer">
+            <nav class="navegacion">
+
+                <a href="nosotros.html">Nosotros</a>
+                <a href="anuncios.html">Anuncios</a>
+                <a href="blog.html">Blog</a>
+                <a href="contacto.html">Contacto</a>
+
+            </nav>
+
+            <p class="copyright">Todos los Derechos Reservados 2021 &copy; </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
