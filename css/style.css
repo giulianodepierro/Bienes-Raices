@@ -170,6 +170,27 @@
         .navegacion a:hover {
             color: #71b100;
         }
+        /**Mobile menu**/
+        
+        .mobile-menu img {
+            width: 5rem;
+        }
+        
+        @media (min-width: 768px) {
+            .mobile-menu {
+                display: none;
+            }
+        }
+        
+        .navegacion {
+            display: none;
+        }
+        
+        @media (min-width: 768px) {
+            .navegacion {
+                display: block;
+            }
+        }
         /**iconos-nosotros**/
         
         @media (min-width: 768px) {
